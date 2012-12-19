@@ -1,0 +1,27 @@
+name: McMMOAssign
+version: 0.1
+description: Give players McMMO points which they can assign to any skill they want!
+author: bobacadodl
+main: com.github.bobacadodl.McMMOAssign.McMMOAssign
+depend: [mcMMO]
+commands:
+  mcmmoassign:
+    aliases: [mcma, mca, mcassign, mcmassign, mcmmoa, mcmma]
+    description: Root plugin command
+    permission: mcmmoassign.help
+permissions:
+  mcmmoassign.help:
+    description: Allows you to view the help command.
+    default: true
+  mcmmoassign.add:
+    description: Allows you to give people mcmmo points
+    default: op
+  mcmmoassign.remove:
+    description: Allows you to remove mcmmo points from people.
+    default: op
+  mcmmoassign.assign:
+    description: Allows you to assign mcmmo points that you have been given.
+    default: true
+  mcmmoassign.check:
+    description: Allows you to check how many mcmmo points you have left to spend.
+    default: true
